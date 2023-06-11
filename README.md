@@ -1,6 +1,6 @@
 # Chatgram (web chat app)
 
-## [review online](https://friendly-bublanina-5bb058.netlify.app/)
+## [review online](https://fastidious-otter-1b36fd.netlify.app/)
 
 ---
 
