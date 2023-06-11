@@ -17,16 +17,16 @@ const Chats = () => {
 
   useEffect(() => {
     if (!user) {
-      navigate("/")
+      navigate("/");
       return;
     }
 
     axios
       .get("https://api.chatengine.io/users/me", {
         headers: {
-          "project-id": "85a40496-4109-40b3-9b7b-3cccfed7fd75",
+          "project-id": "ee1156a8-62cc-49d1-a44c-80a4db8d6dd8",
           "user-name": user.email,
-          "user-secret": user.uid,
+          "user-secret": user.uid
         },
       })
       .then(() => {
@@ -42,7 +42,7 @@ const Chats = () => {
           axios
             .post("https://api.chatengine.io/users/", formdata, {
               headers: {
-                "private-key": "291d6340-a6af-4b88-91c2-eb4e268768d7",
+                "private-key": "ad625f46-e868-4e3c-b83d-481cf0c3065a",
               },
             })
             .then(() => setLoading(false))
@@ -59,10 +59,14 @@ const Chats = () => {
 
   const logoutHandler = async () => {
     await auth.signOut();
-    navigate("/")
+    navigate("/");
   };
 
-  if (!user || loading) return "Loading";
+  if (!user || loading) {
+    return (
+      <h2 className="absolute top-[40%] left-0 right-0 font-medium text-xl">Loading ...</h2>
+    )
+  }
 
   return (
     <div className="container max-w-screen-xl mx-auto text-[#202427]">
@@ -71,7 +75,7 @@ const Chats = () => {
       </div>
       <ChatEngine
         height="calc(100vh - 97px)"
-        projectID="85a40496-4109-40b3-9b7b-3cccfed7fd75"
+        projectID="ee1156a8-62cc-49d1-a44c-80a4db8d6dd8"
         userName={user.email}
         userSecret={user.uid}
       />

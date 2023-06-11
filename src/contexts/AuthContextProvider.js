@@ -4,7 +4,7 @@ import { auth } from "../firebase";
 
 export const AuthContext = React.createContext();
 
-const AuthContextProvider = ({children}) => {
+const AuthContextProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [user, setUser] = useState(false);
   const navigate = useNavigate();
@@ -13,7 +13,9 @@ const AuthContextProvider = ({children}) => {
     auth.onAuthStateChanged((user) => {
       setUser(user);
       setLoading(false);
-      if (user) navigate("/chats")
+      if (user) {
+        navigate("/chats");
+      }
     });
   }, [user, navigate]);
 

@@ -2,10 +2,11 @@ import firebase from "firebase/app";
 import "firebase/auth";
 
 export const auth = firebase.initializeApp({
-    apiKey: "AIzaSyApqHZXv2b8tQUcSQxqSLz9-EJSwaG5rGM",
-    authDomain: "chatgram-a0cf3.firebaseapp.com",
-    projectId: "chatgram-a0cf3",
-    storageBucket: "chatgram-a0cf3.appspot.com",
-    messagingSenderId: "74470018738",
-    appId: "1:74470018738:web:eaf11ee7e0e9882eefc3ab"
-  }).auth();
+    apiKey: "AIzaSyBghjdNtfyLREFTuZCT2Nyyh6w-wuyG6Cg",
+    authDomain: "chatgram-688d9.firebaseapp.com",
+    projectId: "chatgram-688d9",
+    storageBucket: "chatgram-688d9.appspot.com",
+    messagingSenderId: "113337423291",
+    appId: "1:113337423291:web:97589f721b6fd2de0fe09e",
+  })
+  .auth();

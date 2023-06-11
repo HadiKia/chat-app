@@ -30,14 +30,15 @@
   border: 2px solid #b5e4ca !important;
   padding: 0.5em 0.8em;
   height: 2.5em !important;
+  font-family: inter, shabnam !important;
 }
 .ce-chat-card {
-  font-family: inter !important;
+  font-family: inter, shabnam !important;
 }
 .ce-active-chat-card {
   background-color: #f4f4f4 !important;
   border-radius: 0 !important;
-  font-family: inter !important;
+  font-family: inter, shabnam !important;
 }
 .ce-chat-unread-dot {
   background: #b5e4ca !important;
@@ -54,6 +55,7 @@
   margin-right: 0.5em !important;
   position: relative !important;
   font-weight: 500 !important;
+  font-family: inter, shabnam !important;
 }
 .ce-message-bubble::before {
   position: absolute !important;
@@ -84,6 +86,7 @@
 .ql-container {
   border: none !important;
   border-top: 2px solid #e5e7eb !important;
+  font-family: inter, shabnam !important;
 }
 .ql-toolbar {
   border: none !important;
@@ -112,6 +115,7 @@
 .ce-their-message-bubble {
   background: #f4f4f4 !important;
   color: #202427 !important;
+  font-family: inter, shabnam !important;
 }
 .ce-their-message-bubble::before {
   position: absolute !important;

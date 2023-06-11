@@ -44,3 +44,37 @@
   font-weight: 900;
   src: url("Inter-Black.ttf");
 }
+@font-face {
+  font-family: "shabnam";
+  font-weight: 100;
+  font-style: normal;
+  src: url("Shabnam-Thin.ttf");
+}
+
+@font-face {
+  font-family: "shabnam";
+  font-weight: 300;
+  font-style: normal;
+  src: url("Shabnam-Light.ttf");
+}
+
+@font-face {
+  font-family: "shabnam";
+  font-weight: 400;
+  font-style: normal;
+  src: url("Shabnam.ttf");
+}
+
+@font-face {
+  font-family: "shabnam";
+  font-weight: 500;
+  font-style: normal;
+  src: url("Shabnam-Medium.ttf");
+}
+
+@font-face {
+  font-family: "shabnam";
+  font-weight: 700;
+  font-style: normal;
+  src: url("Shabnam-Bold.ttf");
+}
